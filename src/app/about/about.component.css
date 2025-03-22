@@ -1,4 +1,18 @@
-.about {
+.about-component {
  background-color: #A1E3F9;
- height: 500px;
+ height: fit-content;
+}
+
+.about {
+    padding: 20px;
+    display: flex;
+}
+
+.image {
+    width: 400px;
+    height: 450px;
+}
+
+.content {
+    align-content: center;
 }

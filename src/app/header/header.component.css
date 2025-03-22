@@ -1,38 +1,39 @@
 header {
-    padding: 5px;
-    background: #3674B5;
+    width: 100%;
+    height: fit-content;
+    background: #3674B5;    
+    position: sticky;
+    top: 0px;
 }
 
-.logo{
-    width: 40px;
-    height: 50px;
+.container {
+    margin: 0px;
+    padding: 10px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 30px;
+    width: 25px;
 }
 
 .logo:hover{
     cursor: pointer;
 }
 
-.desktop-menu{
-    margin-top: 24px;
-}
-
-.desktop-menu ul{
-    padding: 0;
-    margin: 0;
+ul {
+    margin:0px;
 }
 
 .desktop-menu ul li{
-    list-style-type: none;
-    color: #D1F8EF;
     display: inline-block;
-    font-size: 18px;
-    margin-left: 26px;
+    margin-left: 40px;
+    color: #D1F8EF;
 }
 
 .desktop-menu ul li:hover{
-    font-size: 19px;
-    font-weight: bold;
-    cursor: pointer;
     color: yellow;
     transition: 0.2s ease-out;
 }
@@ -41,18 +42,23 @@ header {
     display: none;
 }
 
-@media screen and (min-width: 120px) and (max-width:900px){
+@media screen and (min-width: 120px) and (max-width:768px){
     .desktop-menu{
         position: fixed;
         transition: 0.2s ease-in-out;
-        right: -280px;
-        top: 64px;
+        right: -250px;
+        top: 50px;
         background: #3674B5;
-        width: 200px;
-        height: 100%;
+        width: 150px;
+        height: max-content;
+    }
+    .mobile-menu ul {
+        padding-left: 0px;
+
     }
     .desktop-menu ul li {
         display: block;
+        position: relative;
         text-align: left;
         margin: 0;
         padding: 10px 0 10px 26px;
@@ -61,24 +67,10 @@ header {
     .menu-icon {
         display: block;
         color: #D1F8EF;
-        font-size: 40px;
-        padding: 10px;
+        font-size: 20px;
     }
     .mobile-menu {
         right:0;
         transition: 0.2s ease-in-out;
     }
 }
-
-/* ul {
-    list-style-type: none;
-    list-style-position: inherits;
-    float: right;
-}
-
-li {
-    display: inline;
-    padding: 20pxs;
-    justify-content:space-around;
-    padding-right: 50px;
-} */
