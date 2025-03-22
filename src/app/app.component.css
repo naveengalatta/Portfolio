@@ -1,0 +1,9 @@
+.header {
+    display: fixed;
+    position: sticky;
+    top: 0px;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+}
